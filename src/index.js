@@ -122,7 +122,7 @@ async function getWeather(place, lat, lon) {
 
 async function getCoord(place) {
   let apiKey = '95e4dc8196d9da275ac4f6db92770898';
-  let url = `http://api.openweathermap.org/geo/1.0/direct?q=${place}&limit=9&appid=${apiKey}`;
+  let url = `https://api.openweathermap.org/geo/1.0/direct?q=${place}&limit=9&appid=${apiKey}`;
 
   try {
     let response = await fetch(url, { mode: 'cors' });
