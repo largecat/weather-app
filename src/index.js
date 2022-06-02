@@ -38,7 +38,7 @@ function get7Day(weatherData) {
     let iconCode = days[i].weather[0].icon;
     let icon = document.createElement('img');
     icon.classList.add('icon');
-    icon.src = `http://openweathermap.org/img/wn/${iconCode}@2x.png`;
+    icon.src = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
 
     newDiv.append(icon);
 
@@ -92,7 +92,7 @@ function displayWeather(place, weatherData) {
   const todayIcon = document.querySelector('.today-icon');
   console.log(iconCode);
 
-  todayIcon.src = `http://openweathermap.org/img/wn/${iconCode}@2x.png`;
+  todayIcon.src = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
 
   leftSide.appendChild(todayIcon);
 
